@@ -9,12 +9,20 @@ import UIKit
 
 class ViewController: UIViewController {
 
+
+    @IBOutlet weak var вопрос: UILabel!
+ 
     @IBOutlet weak var count: UILabel!
     @IBOutlet weak var imageView: UIImageView!
+    private var font = UIFont(name: "YSDisplay-Medium", size: 20)
+    @IBOutlet weak var рейтинг: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        вопрос.font = font
+        count.font = font
+        рейтинг.font = font
     }
+    
     private var array: [UIImage] = [UIImage(named: "The room")!, UIImage(named: "the lord of the rings the fellelo of the ring")!]//, UIImage(named: "Kill Bill")!, UIImage(named: "The Avengers")!, UIImage(named: "Inception")!, UIImage(named: "Mad Max: Fury Road")!, UIImage(named: "The Lion King")!, UIImage(named: "Pulp Fiction")!]
     private var index = 0
     var a = false
