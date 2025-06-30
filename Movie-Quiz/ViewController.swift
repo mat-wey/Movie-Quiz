@@ -9,7 +9,9 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var buttonYNo: UIButton!
 
+    @IBOutlet weak var buttonYes: UIButton!
     @IBOutlet weak var вопрос: UILabel!
  
     @IBOutlet weak var count: UILabel!
@@ -21,8 +23,11 @@ class ViewController: UIViewController {
         вопрос.font = font
         count.font = font
         рейтинг.font = font
+        buttonYes.layer.cornerRadius = 12
+        buttonYNo.layer.cornerRadius = 12
+       
     }
-    
+   
     private var array: [UIImage] = [UIImage(named: "The room")!, UIImage(named: "the lord of the rings the fellelo of the ring")!]//, UIImage(named: "Kill Bill")!, UIImage(named: "The Avengers")!, UIImage(named: "Inception")!, UIImage(named: "Mad Max: Fury Road")!, UIImage(named: "The Lion King")!, UIImage(named: "Pulp Fiction")!]
     private var index = 0
     var a = false
@@ -31,7 +36,7 @@ class ViewController: UIViewController {
     }
     @IBAction func buttonYes(_ sender: Any) {
        a = true
-        UIImage(named: array[0])
+       // UIImage(named: array[0])
     }
     private let questions: [QuizQuestion] = [
         QuizQuestion(

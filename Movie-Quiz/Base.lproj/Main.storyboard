@@ -102,8 +102,9 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="buttonYNo" destination="Eyz-R7-gCF" id="IWA-te-zAI"/>
+                        <outlet property="buttonYes" destination="EGG-ue-Uk4" id="aBJ-IA-NqN"/>
                         <outlet property="count" destination="wMr-jI-fAd" id="hDS-3i-dAm"/>
-                        <outlet property="djghjc" destination="8bC-Xf-vdC" id="SJR-vG-arM"/>
                         <outlet property="imageView" destination="h4P-pQ-DRn" id="D54-I6-Faj"/>
                         <outlet property="вопрос" destination="jv4-ny-dH9" id="iVh-eu-0uc"/>
                         <outlet property="рейтинг" destination="rL4-Fj-V6m" id="jLy-Jt-vSg"/>
