@@ -17,16 +17,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launshscheen" translatesAutoresizingMaskIntoConstraints="NO" id="OLx-Ms-OTF">
-                                <rect key="frame" x="-20" y="-1" width="433" height="855"/>
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="OLx-Ms-OTF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="-20" id="0H8-gO-D6G"/>
-                            <constraint firstItem="OLx-Ms-OTF" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" constant="-1" id="OCX-7k-mdQ"/>
-                            <constraint firstAttribute="bottom" secondItem="OLx-Ms-OTF" secondAttribute="bottom" constant="-2" id="Phh-ea-Kfj"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OLx-Ms-OTF" secondAttribute="trailing" constant="-20" id="aic-tf-FAB"/>
+                            <constraint firstAttribute="top" secondItem="OLx-Ms-OTF" secondAttribute="top" id="A9G-CW-pmU"/>
+                            <constraint firstAttribute="trailing" secondItem="OLx-Ms-OTF" secondAttribute="trailing" id="DdF-T3-obO"/>
+                            <constraint firstItem="OLx-Ms-OTF" firstAttribute="bottom" secondItem="Ze5-6b-2t3" secondAttribute="bottom" id="Epr-eH-NvR"/>
+                            <constraint firstItem="OLx-Ms-OTF" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="uno-a9-Hdh"/>
                         </constraints>
                     </view>
                 </viewController>
