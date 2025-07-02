@@ -24,9 +24,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="top" secondItem="OLx-Ms-OTF" secondAttribute="top" id="A9G-CW-pmU"/>
-                            <constraint firstAttribute="trailing" secondItem="OLx-Ms-OTF" secondAttribute="trailing" id="DdF-T3-obO"/>
+                            <constraint firstItem="OLx-Ms-OTF" firstAttribute="trailing" secondItem="Ze5-6b-2t3" secondAttribute="trailing" id="DdF-T3-obO"/>
                             <constraint firstItem="OLx-Ms-OTF" firstAttribute="bottom" secondItem="Ze5-6b-2t3" secondAttribute="bottom" id="Epr-eH-NvR"/>
-                            <constraint firstItem="OLx-Ms-OTF" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="uno-a9-Hdh"/>
+                            <constraint firstAttribute="leading" secondItem="OLx-Ms-OTF" secondAttribute="leading" id="XJt-Eh-1Wd"/>
                         </constraints>
                     </view>
                 </viewController>

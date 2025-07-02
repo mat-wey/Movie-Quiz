@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="235" translatesAutoresizingMaskIntoConstraints="NO" id="w9u-3o-vYq">
-                                <rect key="frame" x="20" y="100" width="353" height="24"/>
+                                <rect key="frame" x="20" y="128" width="353" height="24"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="вопрос:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jv4-ny-dH9">
                                         <rect key="frame" x="0.0" y="0.0" width="81.666666666666671" height="24"/>
@@ -35,17 +35,11 @@
                                     </label>
                                 </subviews>
                             </stackView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="The room" translatesAutoresizingMaskIntoConstraints="NO" id="h4P-pQ-DRn" userLabel="Preview image">
-                                <rect key="frame" x="20" y="138" width="353" height="529.66666666666663"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="h4P-pQ-DRn" secondAttribute="height" multiplier="2:3" id="aC7-g2-sz5"/>
-                                </constraints>
-                            </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="eq0-ge-FgF" userLabel="button Stack View">
-                                <rect key="frame" x="20" y="732" width="353" height="60"/>
+                                <rect key="frame" x="20" y="724" width="353" height="60"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EGG-ue-Uk4">
-                                        <rect key="frame" x="0.0" y="0.0" width="167" height="60"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="166.66666666666666" height="60"/>
                                         <color key="backgroundColor" name="YP White"/>
                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
                                         <color key="tintColor" name="YP Black"/>
@@ -54,11 +48,11 @@
                                             <color key="titleColor" name="YP Black"/>
                                         </state>
                                         <connections>
-                                            <action selector="buttonYes:" destination="BYZ-38-t0r" eventType="touchUpInside" id="E6D-au-v0u"/>
+                                            <action selector="buttonYes:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8Py-nV-uJ9"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eyz-R7-gCF">
-                                        <rect key="frame" x="187" y="0.0" width="166" height="60"/>
+                                        <rect key="frame" x="186.66666666666663" y="0.0" width="166.33333333333337" height="60"/>
                                         <color key="backgroundColor" name="YP White"/>
                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
                                         <color key="tintColor" name="YP Black"/>
@@ -67,7 +61,7 @@
                                             <color key="titleColor" name="YP Black"/>
                                         </state>
                                         <connections>
-                                            <action selector="buttonNo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zju-Nq-vBf"/>
+                                            <action selector="buttonNo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FUc-Ue-yKq"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -75,28 +69,36 @@
                                     <constraint firstAttribute="height" constant="60" id="eGX-BR-3s0"/>
                                 </constraints>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="рейтинг это фильма больше чем 5?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rL4-Fj-V6m">
-                                <rect key="frame" x="20" y="687.66666666666663" width="353" height="24.333333333333371"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="рейтинг это фильма                      больше чем 5?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rL4-Fj-V6m">
+                                <rect key="frame" x="20" y="626" width="353" height="78"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="78" id="2bv-gG-iqn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
                                 <color key="textColor" name="YP White"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="The room" translatesAutoresizingMaskIntoConstraints="NO" id="h4P-pQ-DRn" userLabel="Preview image">
+                                <rect key="frame" x="20" y="77" width="353" height="529.33333333333326"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="h4P-pQ-DRn" secondAttribute="height" multiplier="2:3" id="Xmq-6v-KrL"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" name="YP Black"/>
                         <constraints>
                             <constraint firstItem="eq0-ge-FgF" firstAttribute="top" secondItem="rL4-Fj-V6m" secondAttribute="bottom" constant="20" id="AYg-H1-sZH"/>
                             <constraint firstItem="rL4-Fj-V6m" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="FpG-1Q-2kl"/>
-                            <constraint firstAttribute="bottom" secondItem="eq0-ge-FgF" secondAttribute="bottom" constant="60" id="GEd-5m-os0"/>
                             <constraint firstAttribute="trailing" secondItem="w9u-3o-vYq" secondAttribute="trailing" constant="20" id="MaI-cx-IHR"/>
                             <constraint firstItem="h4P-pQ-DRn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="PZU-Ub-xcf"/>
-                            <constraint firstItem="h4P-pQ-DRn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="TiX-70-OtG"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eq0-ge-FgF" secondAttribute="trailing" constant="20" id="Vwk-GP-THJ"/>
+                            <constraint firstItem="w9u-3o-vYq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="Zxp-2o-Qv1"/>
+                            <constraint firstItem="eq0-ge-FgF" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="ck3-Ve-orc"/>
                             <constraint firstItem="w9u-3o-vYq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="fZ7-D1-ZT8"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rL4-Fj-V6m" secondAttribute="trailing" constant="20" id="gNs-Xq-Ruz"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="h4P-pQ-DRn" secondAttribute="trailing" constant="20" id="gyb-tn-hr1"/>
-                            <constraint firstItem="h4P-pQ-DRn" firstAttribute="top" secondItem="w9u-3o-vYq" secondAttribute="bottom" constant="14" id="kKj-nJ-Jiz"/>
-                            <constraint firstItem="EGG-ue-Uk4" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.424936" id="pHl-3W-Mhd"/>
+                            <constraint firstItem="EGG-ue-Uk4" firstAttribute="width" secondItem="Eyz-R7-gCF" secondAttribute="width" id="pHl-3W-Mhd"/>
                             <constraint firstItem="eq0-ge-FgF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="wb9-ZX-y6k"/>
                             <constraint firstItem="rL4-Fj-V6m" firstAttribute="top" secondItem="h4P-pQ-DRn" secondAttribute="bottom" constant="20" id="xFX-bk-mMj"/>
                         </constraints>
@@ -105,6 +107,7 @@
                         <outlet property="buttonYNo" destination="Eyz-R7-gCF" id="IWA-te-zAI"/>
                         <outlet property="buttonYes" destination="EGG-ue-Uk4" id="aBJ-IA-NqN"/>
                         <outlet property="count" destination="wMr-jI-fAd" id="hDS-3i-dAm"/>
+                        <outlet property="counterLabel" destination="wMr-jI-fAd" id="t1T-Sb-EMS"/>
                         <outlet property="imageView" destination="h4P-pQ-DRn" id="D54-I6-Faj"/>
                         <outlet property="вопрос" destination="jv4-ny-dH9" id="iVh-eu-0uc"/>
                         <outlet property="рейтинг" destination="rL4-Fj-V6m" id="jLy-Jt-vSg"/>
