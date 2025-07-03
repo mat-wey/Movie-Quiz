@@ -87,7 +87,7 @@ class ViewController: UIViewController {
         imageView.layer.borderWidth = 8
         imageView.layer.borderColor = isCorrect ? UIColor.ypGreen.cgColor : UIColor.ypRed.cgColor
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.0) {
             
             self.showNextQuestionOrResults()
         }
@@ -114,7 +114,7 @@ class ViewController: UIViewController {
     }
     private func show(quiz step: QuizStepViewModel) {
         imageView.image = step.image
-        вопрос.text = step.question
+        рейтинг.text = step.question
         counterLabel.text = step.questionNumber
     }
  
@@ -126,6 +126,7 @@ class ViewController: UIViewController {
                        text: text,
                        buttonText: "Сыграть ещё раз")
                    show(quiz: viewModel)
+            index = 0
         } else {
             index += 1
             let nextQuestion = questions[index]
