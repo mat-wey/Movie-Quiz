@@ -79,10 +79,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="The room" translatesAutoresizingMaskIntoConstraints="NO" id="h4P-pQ-DRn" userLabel="Preview image">
-                                <rect key="frame" x="20" y="77" width="353" height="529.33333333333326"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="h4P-pQ-DRn" secondAttribute="height" multiplier="2:3" id="Xmq-6v-KrL"/>
-                                </constraints>
+                                <rect key="frame" x="20" y="174" width="353" height="432"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -99,6 +96,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rL4-Fj-V6m" secondAttribute="trailing" constant="20" id="gNs-Xq-Ruz"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="h4P-pQ-DRn" secondAttribute="trailing" constant="20" id="gyb-tn-hr1"/>
                             <constraint firstItem="EGG-ue-Uk4" firstAttribute="width" secondItem="Eyz-R7-gCF" secondAttribute="width" id="pHl-3W-Mhd"/>
+                            <constraint firstItem="h4P-pQ-DRn" firstAttribute="top" secondItem="w9u-3o-vYq" secondAttribute="bottom" constant="22" id="sw6-lI-DT7"/>
                             <constraint firstItem="eq0-ge-FgF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="wb9-ZX-y6k"/>
                             <constraint firstItem="rL4-Fj-V6m" firstAttribute="top" secondItem="h4P-pQ-DRn" secondAttribute="bottom" constant="20" id="xFX-bk-mMj"/>
                         </constraints>
