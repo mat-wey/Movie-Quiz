@@ -54,7 +54,7 @@ final class MovieQuizViewController: UIViewController, QuestionFactoryDelegate, 
            self.questionFactory = questionFactory
        
        
-        if let firstQuestion = questionFactory.requestNextQuestion() {
+        if questionFactory.requestNextQuestion() != nil {
             no.layer.cornerRadius = 20
             yes.layer.cornerRadius = 20
             no.isHidden = true
@@ -124,12 +124,7 @@ final class MovieQuizViewController: UIViewController, QuestionFactoryDelegate, 
                     "Вы ответили на \(correctAnswers) из 10, попробуйте ещё раз!"
         
         } else {
-            if let nextQuestion = questionFactory.requestNextQuestion(){
-                currentQuestion = nextQuestion
-                let viewModel = convert(model: nextQuestion)
-
-                show(quiz: viewModel)
-            }
+            questionFactory.requestNextQuestion() 
         }
     }
     
