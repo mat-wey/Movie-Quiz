@@ -17,16 +17,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launshscheen" translatesAutoresizingMaskIntoConstraints="NO" id="OLx-Ms-OTF">
-                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <rect key="frame" x="-1" y="-1" width="395" height="854"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstAttribute="top" secondItem="OLx-Ms-OTF" secondAttribute="top" id="A9G-CW-pmU"/>
-                            <constraint firstItem="OLx-Ms-OTF" firstAttribute="trailing" secondItem="Ze5-6b-2t3" secondAttribute="trailing" id="DdF-T3-obO"/>
-                            <constraint firstItem="OLx-Ms-OTF" firstAttribute="bottom" secondItem="Ze5-6b-2t3" secondAttribute="bottom" id="Epr-eH-NvR"/>
-                            <constraint firstAttribute="leading" secondItem="OLx-Ms-OTF" secondAttribute="leading" id="XJt-Eh-1Wd"/>
+                            <constraint firstAttribute="top" secondItem="OLx-Ms-OTF" secondAttribute="top" constant="1" id="A9G-CW-pmU"/>
+                            <constraint firstItem="OLx-Ms-OTF" firstAttribute="trailing" secondItem="Ze5-6b-2t3" secondAttribute="trailing" constant="1" id="DdF-T3-obO"/>
+                            <constraint firstItem="OLx-Ms-OTF" firstAttribute="bottom" secondItem="Ze5-6b-2t3" secondAttribute="bottom" constant="1" id="Epr-eH-NvR"/>
+                            <constraint firstAttribute="leading" secondItem="OLx-Ms-OTF" secondAttribute="leading" constant="1" id="XJt-Eh-1Wd"/>
                         </constraints>
                     </view>
                 </viewController>

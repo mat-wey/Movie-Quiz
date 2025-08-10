@@ -8,19 +8,17 @@
 import UIKit
 
 final class MovieQuizViewController: UIViewController, QuestionFactoryDelegate, AlertPresenterDelegate {
- 
+    
     // MARK: - QuestionFactoryDelegate
     
     func didTapOk() {
-       
+        
     }
-
-    
     func didReceiveNextQuestion(question: QuizQuestion?) {
         guard let question = question else {
             return
         }
-
+        
         currentQuestion = question
         let viewModel = convert(model: question)
         
@@ -31,7 +29,7 @@ final class MovieQuizViewController: UIViewController, QuestionFactoryDelegate, 
     // MARK: - IB Outlets
     
     @IBOutlet weak var questionLabel: UILabel!
-
+    
     @IBOutlet weak var indexLabel: UILabel!
     @IBOutlet weak var questionTitleLabel: UILabel!
     @IBOutlet weak var imageView: UIImageView!
@@ -45,23 +43,22 @@ final class MovieQuizViewController: UIViewController, QuestionFactoryDelegate, 
     private let questionsAmount: Int = 10
     private var questionFactory: QuestionFactoryProtocol = QuestionFactory()
     private var currentQuestion: QuizQuestion?
-   
+    
     override func viewDidLoad() {
-           super.viewDidLoad()
-
-           let questionFactory = QuestionFactory()
+        super.viewDidLoad()
+        
+        let questionFactory = QuestionFactory()
         questionFactory.setup(delegate: self)
-           self.questionFactory = questionFactory
-       
-       
-        if questionFactory.requestNextQuestion() != nil {
+        self.questionFactory = questionFactory
+        
+        
+//        if questionFactory.requestNextQuestion() != nil {
             no.layer.cornerRadius = 20
             yes.layer.cornerRadius = 20
-            no.isHidden = true
-            yes.isHidden = true
+           
             
-        }
-       
+       // }
+        
     }
     
     // MARK: - IB Actions
@@ -75,7 +72,8 @@ final class MovieQuizViewController: UIViewController, QuestionFactoryDelegate, 
         shownswerResult(isCorrect: givenAnswer == currentQuestion.correctAnswer) // 3
         yes.isHidden = false
         no.isHidden = false
-        yes.titleLabel?.textColor = .white
+        yes.backgroundColor = .ypGray
+        no.backgroundColor = .ypGray
     }
     
     @IBAction func actionYes(_ sender: Any) {
@@ -87,12 +85,14 @@ final class MovieQuizViewController: UIViewController, QuestionFactoryDelegate, 
         shownswerResult(isCorrect: givenAnswer == currentQuestion.correctAnswer) // 3
         yes.isHidden = false
         no.isHidden = false
-        yes.titleLabel?.textColor = .white
+        yes.backgroundColor = .ypGray
+        no.backgroundColor = .ypGray
     }
     
     // MARK: - Public Methods
     
     func shownswerResult(isCorrect: Bool){
+        // неправильно, в методе показа результат не должно быть настройки
         imageView.layer.masksToBounds = true
         imageView.layer.borderWidth = 8
         imageView.layer.borderColor = isCorrect ? UIColor.ypGreen.cgColor : UIColor.ypRed.cgColor
@@ -114,21 +114,27 @@ final class MovieQuizViewController: UIViewController, QuestionFactoryDelegate, 
         imageView.image = step.image
         questionTitleLabel.text = step.question
         indexLabel.text = step.questionNumber
+        
+        yes.isHidden = false
+        no.isHidden = false
+        yes.backgroundColor = .ypGray
+        no.backgroundColor = .ypGray
     }
     
+    
     private func showNextQuestionOrResults() {
-        
         if currentQuestionIndex == questionsAmount - 1 {
             let text = correctAnswers == questionsAmount ?
-                    "Поздравляем, вы ответили на 10 из 10!" :
-                    "Вы ответили на \(correctAnswers) из 10, попробуйте ещё раз!"
-        
+            "Поздравляем, вы ответили на 10 из 10!" :
+            "Вы ответили на \(correctAnswers) из 10, попробуйте ещё раз!"
+            // Тут можно показать alert
         } else {
-            questionFactory.requestNextQuestion() 
+            currentQuestionIndex += 1
+            questionFactory.requestNextQuestion()
         }
     }
     
-
+    
 }
 
 

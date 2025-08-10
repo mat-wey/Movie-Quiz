@@ -9,5 +9,6 @@ import Foundation
 import UIKit
 
 protocol AlertPresenterProtocol: AnyObject {
-    func show(quiz result: QuizResultsViewModel)
+    func show(quiz result: QuizResultsViewModel, in viewController: UIViewController)
 }
+
