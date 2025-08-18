@@ -16,19 +16,30 @@ import UIKit
     }
     
      func show(quiz result: QuizResultsViewModel, in viewController: UIViewController) {
-            let alert = UIAlertController(
-                title: result.title,
-                message: result.text,
-                preferredStyle: .alert
-            )
+         let statisticService = StatisticService()
+         let bestGame = statisticService.bestGame
 
-            let action = UIAlertAction(title: result.buttonText, style: .default) { [weak self] _ in
-                self?.delegate?.didTapOk()
-            }
+         let message = """
+         Ваш лучший результат:
+         Правильные ответы: \(bestGame.correct)
+         Всего вопросов: \(bestGame.total)
+         Точность: \(Int((Double(bestGame.correct) / Double(bestGame.total)) * 100))%
+         """
 
-            alert.addAction(action)
-            viewController.present(alert, animated: true)
+         let alert = UIAlertController(
+             title: result.title,
+             message: message,
+             preferredStyle: .alert
+         )
+
+         let action = UIAlertAction(title: result.buttonText, style: .default) { [weak self] _ in
+             self?.delegate?.didTapOk()
+         }
+
+         alert.addAction(action)
+         viewController.present(alert, animated: true)
+     }
         }
-}
+
 
 

@@ -17,16 +17,18 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launshscheen" translatesAutoresizingMaskIntoConstraints="NO" id="OLx-Ms-OTF">
-                                <rect key="frame" x="-1" y="-1" width="395" height="854"/>
+                                <rect key="frame" x="-99.666666666666686" y="-35" width="592.33333333333337" height="888"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="OLx-Ms-OTF" secondAttribute="height" multiplier="2:3" id="YMF-in-L06"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstAttribute="top" secondItem="OLx-Ms-OTF" secondAttribute="top" constant="1" id="A9G-CW-pmU"/>
-                            <constraint firstItem="OLx-Ms-OTF" firstAttribute="trailing" secondItem="Ze5-6b-2t3" secondAttribute="trailing" constant="1" id="DdF-T3-obO"/>
+                            <constraint firstAttribute="top" secondItem="OLx-Ms-OTF" secondAttribute="top" constant="35" id="A9G-CW-pmU"/>
                             <constraint firstItem="OLx-Ms-OTF" firstAttribute="bottom" secondItem="Ze5-6b-2t3" secondAttribute="bottom" constant="1" id="Epr-eH-NvR"/>
-                            <constraint firstAttribute="leading" secondItem="OLx-Ms-OTF" secondAttribute="leading" constant="1" id="XJt-Eh-1Wd"/>
+                            <constraint firstItem="OLx-Ms-OTF" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Tg0-fm-4I7"/>
                         </constraints>
                     </view>
                 </viewController>
