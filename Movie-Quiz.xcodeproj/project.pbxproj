@@ -6,8 +6,15 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		3BD413A62E12B07C000B9B3E /* YS Display-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3BD413A32E12B07C000B9B3E /* YS Display-Bold.ttf */; };
+		3BD413A72E12B07C000B9B3E /* YS Display-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3BD413A42E12B07C000B9B3E /* YS Display-Medium.ttf */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		3BD4130A2E128AC1000B9B3E /* Movie-Quiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Movie-Quiz.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BD413A32E12B07C000B9B3E /* YS Display-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "YS Display-Bold.ttf"; sourceTree = "<group>"; };
+		3BD413A42E12B07C000B9B3E /* YS Display-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "YS Display-Medium.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -21,6 +28,21 @@
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		3B640AF82E44DC680093E3E5 /* Services */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Services;
+			sourceTree = "<group>";
+		};
+		3B91E98F2E33ADEC0027F73E /* model */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = model;
+			sourceTree = "<group>";
+		};
+		3B91E9902E33AE7E0027F73E /* presentation */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = presentation;
+			sourceTree = "<group>";
+		};
 		3BD4130C2E128AC1000B9B3E /* Movie-Quiz */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
@@ -45,6 +67,10 @@
 		3BD413012E128AC1000B9B3E = {
 			isa = PBXGroup;
 			children = (
+				3B91E9902E33AE7E0027F73E /* presentation */,
+				3B91E98F2E33ADEC0027F73E /* model */,
+				3BD413A52E12B07C000B9B3E /* шрифты */,
+				3B640AF82E44DC680093E3E5 /* Services */,
 				3BD4130C2E128AC1000B9B3E /* Movie-Quiz */,
 				3BD4130B2E128AC1000B9B3E /* Products */,
 			);
@@ -56,6 +82,15 @@
 				3BD4130A2E128AC1000B9B3E /* Movie-Quiz.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		3BD413A52E12B07C000B9B3E /* шрифты */ = {
+			isa = PBXGroup;
+			children = (
+				3BD413A32E12B07C000B9B3E /* YS Display-Bold.ttf */,
+				3BD413A42E12B07C000B9B3E /* YS Display-Medium.ttf */,
+			);
+			path = "шрифты";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,6 +109,9 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
+				3B640AF82E44DC680093E3E5 /* Services */,
+				3B91E98F2E33ADEC0027F73E /* model */,
+				3B91E9902E33AE7E0027F73E /* presentation */,
 				3BD4130C2E128AC1000B9B3E /* Movie-Quiz */,
 			);
 			name = "Movie-Quiz";
@@ -122,6 +160,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BD413A62E12B07C000B9B3E /* YS Display-Bold.ttf in Resources */,
+				3BD413A72E12B07C000B9B3E /* YS Display-Medium.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
